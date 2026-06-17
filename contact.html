@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Community Fitness Hub — Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Community Fitness Hub</a>
+    <nav aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu" class="menu">
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <h1>Contact / Book a taster</h1>
+    <form action="#" method="post" id="contact-form">
+      <label for="name">Name</label>
+      <input id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="class">Class interest</label>
+      <select id="class" name="class">
+        <option>Strength</option>
+        <option>Functional Fitness</option>
+        <option>Mobility</option>
+      </select>
+
+      <label for="msg">Message</label>
+      <textarea id="msg" name="message" rows="5"></textarea>
+
+      <button class="btn" type="submit">Send</button>
+    </form>
+    <p>We reply within 1 business day.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Community Fitness Hub</p>
+    <nav aria-label="Footer">
+      <a href="gallery.html">Gallery</a> ·
+      <a href="privacy.html">Privacy/Legal</a> ·
+      <a href="testing-notes.html">Testing Notes</a>
+    </nav>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
