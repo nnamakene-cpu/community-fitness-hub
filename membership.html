@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Fitness Hub - Membership Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Community Fitness Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="membership.html">Membership Form</a></li>
+        <li><a href="interactive.html">Interactive Features</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Community Fitness Hub Membership Form</h2>
+
+    <form id="membershipForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName">
+      <br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="text" id="email" name="email">
+      <br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone">
+      <br><br>
+
+      <p>Select your fitness goals:</p>
+      <input type="checkbox" id="weightLoss" name="goals" value="Weight Loss">
+      <label for="weightLoss">Weight Loss</label>
+
+      <input type="checkbox" id="muscleGain" name="goals" value="Muscle Gain">
+      <label for="muscleGain">Muscle Gain</label>
+
+      <input type="checkbox" id="generalFitness" name="goals" value="General Fitness">
+      <label for="generalFitness">General Fitness</label>
+      <br><br>
+
+      <p>Training Level:</p>
+      <input type="radio" id="beginner" name="level" value="Beginner">
+      <label for="beginner">Beginner</label>
+
+      <input type="radio" id="intermediate" name="level" value="Intermediate">
+      <label for="intermediate">Intermediate</label>
+
+      <input type="radio" id="advanced" name="level" value="Advanced">
+      <label for="advanced">Advanced</label>
+      <br><br>
+
+      <label for="membershipPlan">Membership Type:</label>
+      <select id="membershipPlan" name="membershipPlan">
+        <option value="">Please select</option>
+        <option value="Monthly">Monthly</option>
+        <option value="Quarterly">Quarterly</option>
+        <option value="Annual">Annual</option>
+      </select>
+      <br><br>
+
+      <label for="preferredDay">Preferred Training Day:</label>
+      <select id="preferredDay" name="preferredDay" size="4">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+      </select>
+      <br><br>
+
+      <label for="comments">Health Notes or Fitness Goals:</label>
+      <textarea id="comments" name="comments" rows="5"></textarea>
+      <br><br>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <p id="membershipMessage"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Community Fitness Hub</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
