@@ -39,6 +39,7 @@ function hoverEffect() {
   const hoverText = document.getElementById("hoverText");
   hoverText.style.color = "blue";
   hoverText.style.fontSize = "22px";
+  hoverText.style.fontWeight = "bold";
 }
 
 function validateForm() {
