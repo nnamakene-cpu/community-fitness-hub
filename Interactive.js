@@ -2,10 +2,6 @@ function pageLoaded() {
   alert("Welcome to the Interactive Features page.");
 }
 
-function pageLeft() {
-  alert("You are leaving the Interactive Features page.");
-}
-
 function changeText() {
   const text = document.getElementById("demoText");
   text.innerHTML = "The text has been changed using JavaScript.";
@@ -21,13 +17,19 @@ function showImage() {
   document.getElementById("fitnessImage").style.display = "block";
 }
 
-function moveBox() {
-  let box = document.getElementById("movingBox");
-  let position = 0;
+let isMoving = false;
 
-  let interval = setInterval(function () {
+function moveBox() {
+  const box = document.getElementById("movingBox");
+  if (isMoving) return;
+
+  isMoving = true;
+  let position = parseInt(box.style.left) || 0;
+
+  const interval = setInterval(function () {
     if (position >= 300) {
       clearInterval(interval);
+      isMoving = false;
     } else {
       position += 5;
       box.style.left = position + "px";
@@ -43,7 +45,7 @@ function hoverEffect() {
 }
 
 function validateForm() {
-  const name = document.getElementById("memberName").value;
+  const name = document.getElementById("memberName").value.trim();
   const membership = document.getElementById("membershipType").value;
   const formMessage = document.getElementById("formMessage");
 
